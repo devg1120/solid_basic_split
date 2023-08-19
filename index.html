@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Solid + TS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flex-splitter-directive@0.5.1/styles.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flex-splitter-directive@0.5.1"></script>
+    <script type="module" src="/src/index.tsx"></script>
+  </head>
+
+<body
+  data-flex-splitter-vertical
+  style="height: 100vh; margin: 0;"
+>
+  <header style="max-height: 100px; min-height:50px;">
+    header (max-height: 100px; min-height:50px;)
+  </header>
+
+  <div role="separator" tabindex="1"></div>
+
+  <main
+    data-flex-splitter-horizontal
+    style="flex: auto;"
+  >
+    <div style="width: 150px;" id="root">
+      width: 150px
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+
+    <div
+       data-flex-splitter-vertical
+       style="width:200px; min-width: 80px;"
+     >
+      <div style="height: 12em;" id="clock">width:200px; min-width: 80px</div>
+      <div role="separator" tabindex="1"></div>
+      <div style="flex: auto;" >flex: auto</div>
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+
+    <div style="flex: auto;" id="sketch" >
+      flex: auto
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+
+    <div style="min-width: 100px; max-width: 200px;" id="todo">
+      min-width: 100px<br>max-width: 200px
+    </div>
+  </main>
+
+  <div role="separator" tabindex="1"></div>
+
+  <footer>footer</footer>
+</body>
+
+</html>

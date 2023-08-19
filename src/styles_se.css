@@ -1,0 +1,10 @@
+
+.cell {
+  outline: 1px solid #000000;
+}
+
+.dark .cell {
+  outline: 1px solid #efefef;
+}
+
+
